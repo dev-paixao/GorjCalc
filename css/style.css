@@ -1,10 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,600;0,700;1,300;1,400;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+}
+
 body {
-    font-family: Arial, sans-serif;
-  }
+    background-color: #fffafa;
+}
+
+html{
+    scroll-behavior: smooth;
+}
   
+/*cabecalho*/
+  .cabecalho{
+    background-color: #0077B5;
+    min-height: 10vh;
+}
+
+.cabecalho-img {
+    width: 5%;
+    max-width: 700px;
+    margin: 30px;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.logo-responsive{
+    display: none;
+
+}
+
+.header-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 60px;
+}
+
+.cabecalho-menu-item {
+    color: #ffffff;
+    font-weight: 400px;
+    font-size: max(16px, 1.5vw);
+}
+
+.cabecalho-menu-item:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
   .container {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 15vh auto 0 auto;
     padding: 20px;
     background-color: #f2f2f2;
     border-radius: 5px;
@@ -36,7 +91,7 @@ body {
   }
   
   button {
-    background-color: #4CAF50;
+    background-color: #0077B5;
     color: white;
     border: none;
     border-radius: 5px;
@@ -45,3 +100,123 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
   }
+
+ /*responsividade*/
+
+@media (max-width: 630px) {
+
+  .header-items{
+      display: none;
+  }
+
+  header .top{
+      display: none;
+  }
+
+  .menu-responsive{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  .logo-responsive{
+      display: flex;
+      max-width: 700px;
+      width: 7%;
+      margin: 30px;
+      box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  
+  }
+
+  .button-contacte {
+      margin-top: 2vh;
+  }
+  
+  .one,
+  .two,
+  .three {
+      background-color: #fff;
+      height: 2px;
+      width: 60%;
+      margin: 5px auto;
+      transition-duration: 0.3s;
+  }
+
+  .menu-toggle{
+      width: 40px;
+      height: 30px;
+  }
+
+  .cabecalho .menu-toggle{
+      position: absolute;
+      right: -4vw;
+      margin-right: 10vw;
+      top: 3vh;
+  }
+
+  /*fullscren*/
+
+
+  .logo-responsive.off{
+      opacity: 0%;
+  }
+
+  .container.on{
+      margin-top: 120vh;
+  }
+
+
+  .cabecalho.on{
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 100vw;
+      height: 100vh;
+
+      z-index: 10;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .cabecalho.on .header-items{
+      display: flex;
+      flex-direction: column;
+      margin-top: 25vh;
+  }
+
+  .cabecalho.on .cabecalho-menu{
+      display: flex;
+      flex-direction: column;
+      line-height: 1rem;
+      text-align: center;
+  }
+
+  .cabecalho-menu-item{
+      font-size: 5vw;
+  }
+
+  .cabecalho.on .menu-toggle{
+      position: absolute;
+      right: -4vw;
+      margin-right: 10vw;
+      top: 3vh;
+  }
+
+  .cabecalho.on .menu-toggle .one{
+      transform: rotate(45deg) translate(7px, 7px);
+  }
+
+  .cabecalho.on .menu-toggle .two{
+      opacity: 0;
+  }
+
+  .cabecalho.on .menu-toggle .three{
+      transform: rotate(-45deg) translate(3px, -4px);
+  }
+
+  .cabecalho.on .cabecalho-img{
+      width: 10%;
+  }
+
+}
