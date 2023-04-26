@@ -1,6 +1,6 @@
 # :rocket: Sobre o Projeto
 # GorjCalc
- Uma calculadora de gorjeta utilizando as seguintes tecnologias javascript, html5 e CSS. A aplicação permite aos garçons calcularem a gorjeta que o cliente deve pagar com base no valor total da conta.
+ Uma Calculadora de gorjeta utilizando as seguintes tecnologias javascript, html5 e CSS. A aplicação permite aos garçons calcularem o valor da gorjeta que os clientes devem pagar com base no valor total da conta.
 
 # :rocket: Tecnologias utilizadas
 
@@ -16,4 +16,4 @@ O projeto foi desenvolvido com as seguintes tecnologias:
 
 # :rocket: Prévia do projeto
 
-![Preview](./img/preview.gif)
+![Preview](./img/preview.png)
