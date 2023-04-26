@@ -12,7 +12,7 @@ O projeto foi desenvolvido com as seguintes tecnologias:
 
 # :rocket: Acesse o projeto
 
-## [Clique aqui]()
+## [Clique aqui](https://dev-paixao.github.io/GorjCalc/)
 
 # :rocket: Prévia do projeto
 
