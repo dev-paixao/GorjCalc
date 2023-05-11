@@ -18,7 +18,7 @@ html{
   
 /*cabecalho*/
   .cabecalho{
-    background-color: #00897B;
+    background-color: #004B95;
     min-height: 10vh;
 }
 
@@ -91,7 +91,7 @@ html{
   }
   
   button {
-    background-color: #00897B;
+    background-color: #004B95;
     color: white;
     border: none;
     border-radius: 5px;
@@ -109,7 +109,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #00897B;
+    background-color: #004B95;
     color: #FFF;
     padding: 20px;
     font-size: max(8px, 1.2vw);
