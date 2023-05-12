@@ -115,7 +115,7 @@ html{
     background-color: #004B95;
     color: #FFF;
     padding: 20px;
-    font-size: max(8px, 1.2vw);
+    font-size: 0.7rem;
   }
 
  /*responsividade*/
