@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="img/">
   <!-- Fontawesome CDN Link -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
   <link rel="stylesheet" href="css/style.css">
   <title>Calculadora de Gorjeta</title>
 </head>
@@ -40,28 +41,40 @@
 
   <main id="home" class="container">
   <section class="main-container">
-    <h1>Calculadora de Gorjeta</h1>
-    <form>
+    <h1 id="title">Calculadora de Gorjeta</h1>
+    <form id="form">
       <div class="form-group">
         <label for="total-bill">Total da Conta:</label>
-        <input type="number" id="total-bill" required>
+        <div class="input-field">
+          <i class="fa-solid fa-brazilian-real-sign"></i>
+          <input type="number" id="total-bill" required>
+        </div>
+        
       </div>
 
       <div class="form-group">
         <label for="service-quality">Qualidade do Serviço:</label>
-        <select id="service-quality" required>
-          <option value="">Selecione uma opção</option>
-          <option value="0.3">30% - Sensacional</option>
-          <option value="0.2">20% - Excelente</option>
-          <option value="0.15">15% - Bom</option>
-          <option value="0.1">10% - Médio</option>
-          <option value="0.05">5% - Okay</option>
-        </select>
+        <div class="input-field">
+          <i class="fa-solid fa-percent"></i>
+          <select id="service-quality" required>
+            <option value="">Selecione uma opção</option>
+            <option value="0.3">30% - Sensacional</option>
+            <option value="0.2">20% - Excelente</option>
+            <option value="0.15">15% - Bom</option>
+            <option value="0.1">10% - Médio</option>
+            <option value="0.05">5% - Okay</option>
+          </select>
+        </div>
+       
       </div>
 
       <div class="form-group">
         <label for="num-people">Número de Pessoas:</label>
-        <input type="number" id="num-people" required>
+        <div class="input-field">
+          <i class="fa-solid fa-person"></i>
+          <input type="number" id="num-people" required>
+        </div>
+        
       </div>
 
       <button type="button" id="calculate-btn">Calcular</button>

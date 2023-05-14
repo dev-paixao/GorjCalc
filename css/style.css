@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,600;0,700;1,300;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,600,700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
 }
 
@@ -20,7 +20,7 @@ html{
   
 /*cabecalho*/
   .cabecalho{
-    background-color: #004B95;
+    background-color: #3065ac;
     min-height: 10vh;
 }
 
@@ -59,19 +59,42 @@ html{
     text-decoration: underline;
 }
 
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5rem;
+}
+
   .main-container {
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    color: #ffffff;
+    background-color: #3065ac  ;
+    border-radius: 10px;
     width: 70vw;
-    max-width: 500px;
-    margin: 15vh auto 0 auto;
-    padding: 20px;
-    background-color: #f2f2f2;
-    border-radius: 5px;
+    max-width: 600px;
+    margin: 20vh;
+
   }
+
+  #form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
   
-  h1 {
-    text-align: center;
-  }
-  
+#title {
+    display: flex;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
   form {
     margin-bottom: 20px;
   }
@@ -83,44 +106,111 @@ html{
   }
   
   .form-group label {
-    font-weight: bold;
-  }
-  
-  .form-group input,
-  .form-group select {
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  button {
-    background-color: #004B95;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #ffffff;
   }
 
+  .input-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3f3f46;
+    padding: 0.3rem;
+    border-radius: 3px;
+    margin-top: 3px;
+}
+
+.input-field span,
+.input-field i  {
+    color: #ffffff;
+    font-size: 1.3rem;
+    padding: 0.6rem 1rem;
+}
+
+.input-field select{
+    color: #f4c430 ;
+    background-color: #3f3f46;
+    border: none;
+    font-size: 1.3rem;
+    padding: 0.6rem 1rem;
+    width: 100%;
+}
+
+.input-field input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 1.3rem;
+    color: #ffffff;
+    padding: 0 0.5rem;
+}
+
+.input-field input::-webkit-outer-spin-button,
+.input-field input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.input-field input:focus,
+.input-field select:focus {
+    outline: none;
+}
+  
+  button {
+    border: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #f4c430 ;;
+    padding: 0.5rem 0;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  #result {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.75rem 0;
+}
+
   footer {
-    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #004B95;
-    color: #FFF;
+    background-color: #3065ac;
+    color: #ffffff;
     padding: 20px;
     font-size: 0.7rem;
   }
 
+  #results {
+   margin: 0;
+  }
+  
+  .result-group {
+    margin-bottom: 0.625rem; 
+  }
+  
+  .result-label {
+    display: inline-block;
+    width: 9.375rem; 
+    font-weight: bold;
+  }
+  
+  .result-value {
+    display: inline-block;
+    font-weight: bold;
+  }
+  
+
  /*responsividade*/
 
-@media (max-width: 630px) {
+@media (max-width: 768px) {
 
   .header-items{
       display: none;
@@ -145,10 +235,6 @@ html{
   
   }
 
-  .button-contacte {
-      margin-top: 2vh;
-  }
-  
   .one,
   .two,
   .three {
@@ -171,8 +257,16 @@ html{
       top: 3vh;
   }
 
-  /*fullscren*/
+  .input-field select{
+    font-size: 1rem;
+}
 
+.input-field span,
+.input-field i  {
+    padding: 0;
+}
+
+  /*fullscren*/
 
   .logo-responsive.off{
       opacity: 0%;
@@ -235,5 +329,9 @@ html{
   .cabecalho.on .cabecalho-img{
       width: 10%;
   }
+
+}
+
+@media screen and (max-width: 500px) {
 
 }
