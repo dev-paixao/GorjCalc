@@ -2,7 +2,7 @@
 
 Calculadora de gorjeta desenvolvida utilizando JavaScript, HTML5 e CSS.
 
-## :rocket: Tecnologias Utilizadas
+## :computer: Tecnologias Utilizadas
 
 O projeto foi desenvolvido com as seguintes tecnologias:
 
