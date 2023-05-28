@@ -1,8 +1,8 @@
-# GorjCalc
+# :rocket: GorjCalc
 
 Calculadora de gorjeta desenvolvida utilizando JavaScript, HTML5 e CSS.
 
-##Tecnologias Utilizadas
+## :rocket: Tecnologias Utilizadas
 
 O projeto foi desenvolvido com as seguintes tecnologias:
 
@@ -10,11 +10,11 @@ O projeto foi desenvolvido com as seguintes tecnologias:
 - CSS
 - JavaScript
 
-## Acesse o Projeto
+## :rocket: Acesse o Projeto
 
 Para experimentar a GorjCalc, acesse o seguinte link: [GorjCalc](https://dev-paixao.github.io/GorjCalc/)
 
-## Prévia do Projeto
+## :rocket: Prévia do Projeto
 
 ![Preview](./img/preview.png)
 
